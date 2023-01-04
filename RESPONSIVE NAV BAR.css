@@ -1,0 +1,119 @@
+body{
+    background:url("https://c1.wallpaperflare.com/preview/171/852/28/keyboard-coffee-desk-monitor.jpg") no-repeat; 
+    background-size:cover;
+    font-family:monospace;padding:0;margin:0;
+    background-color:#c1c1c1;font-size:1rem;
+    height:100vh;
+}
+nav{
+    width:100%;color:#fff;
+    height:100px;/*background-color:#a30330;*/
+}
+#brand{
+    font-size:2rem;margin:0 10px;
+    padding:20px;line-height:90px;
+    cursor:pointer;
+}
+#brand a{
+    color:#000;text-decoration:none;
+}
+ul{
+    padding:0;margin:0;float:right;
+}
+li{
+    list-style:none;padding:20px;
+    display:inline-block;line-height:50px;
+}
+a{
+    color:#fff;text-decoration:none;
+    cursor:pointer;
+}
+li a:hover, .home{
+    border:2px solid #fff;padding:10px;
+     transition:.4s; 
+    
+}
+input{
+    display:none;
+}
+.container{
+    display:flex;flex-direction:column;align-items:center;
+    justify-content:center;margin:30px auto;color:#fff;width:40vw;
+    padding:10px;border-radius:15px;
+    backdrop-filter:blur(2px);
+}    
+img{
+    width:110px;height:110px;
+}
+h2 a{
+    color:#a30330;
+}
+p{color:#000;}
+button{
+    background-color:#a30330;color:#fff;border:none;padding:10px;
+    margin:10px 0;width:150px;height:40px;
+}
+button, p{
+    text-transform:uppercase;
+    text-align:center;
+}
+#btn{
+    position:fixed;
+    right:0;
+    top:0;padding:20px;line-height:50px;
+    cursor:pointer;color:#fff;
+    background-color:transparent;
+}
+footer{
+    color:#fff;text-align:center;line-height:80px;
+    background-color:#000;width:100%;height:80px;
+    margin:0;
+    position:fixed;bottom:0px; 
+}
+
+/*media queries*/
+@media screen and (max-width:768px){
+    nav{
+        display:inline-block;
+    }
+    li{
+        display:none;
+    }
+
+/* MENU DESPEGABLE DESPUES DEL CLICK */
+    .menuDespegable {
+    margin:0;
+    background-color:gray;
+    height:100vh;
+    width:100vw;
+    position:relative;
+    top:0;
+    left:0;
+    z-index:2;
+    overflow:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.menuDespegable li{
+    text-align:center;
+    display:block;
+}
+.menuDespegable li:hover{
+    font-weight:900;
+    
+}
+.menuDespegable a:hover{
+    color:#111b21;
+    border:1px solid #111b21;
+    }
+}
+@media screen and (min-width:770px){
+    #btn{
+        display:none;
+    }
+    .menu{
+        display:none;
+    }
+}
