@@ -1,0 +1,29 @@
+#contact{
+    position:relative;
+    top:0px;
+    left:0;
+    overflow:hidden;
+    box-shadow:2px 2px 5px #c1c1c1;
+}
+#contact:hover{
+	box-shadow:2px 2px 5px white;
+}
+span{
+    z-index:2;
+    color:#fff;
+    position:relative;
+}
+#contact::after{
+	content:"";
+	width:150px;
+	height:40px;
+	background-color:purple;
+	position:absolute;
+	top:-40px;
+	left:0;
+}
+#contact:hover::after{
+	top:0px;
+	left:0;
+	z-index:1;
+}
