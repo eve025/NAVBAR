@@ -89,7 +89,7 @@ footer{
     position:relative;
     top:0;
     left:0;
-    z-index:2;
+    z-index:3;
     overflow:none;
     display:flex;
     flex-direction:column;
